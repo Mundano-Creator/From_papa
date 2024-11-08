@@ -13,7 +13,7 @@ function Form({ callback }) {
             alert("Por favor, complete todos los campos.");
             return;
         }
-        fetch('http://localhost:4000/v1/signos/login', {
+        fetch("http://localhost:4000/v1/signos/login", {
             method: 'POST',
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({ username, password })
