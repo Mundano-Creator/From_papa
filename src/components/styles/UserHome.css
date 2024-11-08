@@ -1,0 +1,133 @@
+/* variables.css */
+:root {
+    --primary-color: #ffe550;         /* Naranja atractivo */
+    --secondary-color: #e77641;       /* Naranja suave para hover */
+    --highlight-color: #ff5e00;       /* Naranja intenso para destacar */
+    --background-color: #ffffff;      /* Fondo claro */
+    --text-color: #333;
+    --border-color: #000000;
+    --shadow-color: rgba(255, 140, 0, 0.2); /* Naranja translúcido */
+}
+
+/* Estilos generales para la página */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+txtbienvenida
+/* Contenedor principal */
+.user-home {
+    background-color: var(--white);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px var(--shadow-color);
+    max-width: 800px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Título principal */
+.user-home h1 {
+    font-size: 2.5em;
+    color: var(--highlight-color);
+    margin-bottom: 20px;
+}
+
+/* Formulario para registrar código */
+.form-registrar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.form-registrar label {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.form-registrar .input {
+    padding: 10px;
+    font-size: 1em;
+    width: 60%;
+    margin-bottom: 15px;
+    border: 2px solid var(--primary-color);
+    border-radius: 8px;
+    transition: border-color 0.3s ease;
+}
+
+.form-registrar .input:focus {
+    border-color: var(--highlight-color);
+}
+
+/* Botones */
+.btn {
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.15);
+}
+
+.btn:hover {
+    background-color: var(--secondary-color);
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Botón de refrescar */
+.btn-refresh {
+    background-color: var(--highlight-color);
+    margin-bottom: 20px;
+}
+
+/* Tabla de códigos registrados */
+.tabla-codigos {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.tabla-codigos th,
+.tabla-codigos td {
+    border: 1px solid var(--border-color);
+    padding: 12px;
+    text-align: center;
+}
+
+.tabla-codigos th {
+    background-color: var(--highlight-color);
+    color: var(--white);
+    font-size: 1.1em;
+}
+
+.tabla-codigos tr:nth-child(even) {
+    background-color: #fff5e1; /* Fondo claro alterno */
+}
+
+.tabla-codigos tr:hover {
+    background-color: #ffe4c4; /* Resaltado en hover */
+}
+
+/* Mensaje cuando no hay códigos */
+.tabla-codigos td[colspan="3"] {
+    font-style: italic;
+    color: #888;
+}
+
+/* Ajustes de responsividad */
+@media (max-width: 768px) {
+    .form-registrar .input {
+        width: 80%;
+    }
+}
