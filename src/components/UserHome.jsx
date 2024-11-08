@@ -22,7 +22,7 @@ function UserHome({ user }) {
         }
 
         try {
-            const response = await fetch("http://localhost:4000/v1/signos/registrarcodigo", {
+            const response = await fetch("https://back-papa.vercel.app/v1/signos/registrarcodigo", {
                 method: "POST",
                 headers: { 
                     "Content-Type": "application/json",

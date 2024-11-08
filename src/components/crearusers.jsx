@@ -18,7 +18,7 @@ function Crearusuarios() {
             alert("Por favor, complete todos los campos.");
             return;
         }
-        fetch(`http://localhost:4000/v1/signos/crear`, {
+        fetch(`https://back-papa.vercel.app/v1/signos/crear`, {
             method: 'POST',
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({ username, password, birthdate, cedula, email, cellphone, city })

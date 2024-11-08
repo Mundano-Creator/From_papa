@@ -15,7 +15,7 @@ function ChangePassword() {
             return;
         }
 
-        fetch(`http://localhost:4000/v1/signos/actualizar`, {
+        fetch(`https://back-papa.vercel.app/v1/signos/actualizar`, {
             method: 'POST',
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({ username, password, update })  
