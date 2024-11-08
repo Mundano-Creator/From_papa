@@ -22,7 +22,7 @@ function UserHome({ user }) {
         }
 
         try {
-            const response = await fetch("https://back-papa.vercel.app/v1/signos/registrarcodigo", {
+            const response = await fetch('https://back-papa.vercel.app/v1/signos/registrarcodigo', {
                 method: "POST",
                 headers: { 
                     "Content-Type": "application/json",
@@ -48,7 +48,7 @@ function UserHome({ user }) {
     // Función para obtener los códigos registrados del backend usando el método POST
 const fetchCodigosRegistrados = async () => {
     try {
-        const response = await fetch("http://localhost:4000/v1/signos/codigosregistrados", {
+        const response = await fetch('https://back-papa.vercel.app/v1/signos/codigosregistrados', {
             method: "POST",
             headers: { 
                 "Content-Type": "application/json"

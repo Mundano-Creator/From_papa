@@ -14,7 +14,7 @@ function Ganadores() {
             return;
         }
         try {
-            const response = await fetch("https://back-papa.vercel.app/v1/signos/premios", {
+            const response = await fetch('https://back-papa.vercel.app/v1/signos/premios', {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify({ codigo, premio }),
